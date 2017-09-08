@@ -1,0 +1,10 @@
+#! /bin/bash
+
+rm -f *.tex~ MCP_PMTs_ANL.mtc1 MCP_PMTs_ANL.aux MCP_PMTs_ANL.dvi MCP_PMTs_ANL.lof MCP_PMTs_ANL.log MCP_PMTs_ANL.out MCP_PMTs_ANL.lot MCP_PMTs_ANL.toc MCP_PMTs_ANL.brf MCP_PMTs_ANL.maf MCP_PMTs_ANL.mtc MCP_PMTs_ANL.mtc0 MCP_PMTs_ANL.nlo MCP_PMTs_ANL.end MCP_PMTs_ANL.spl MCP_PMTs_ANLNotes.bib
+
+pdflatex -shell-escape MCP_PMTs_ANL.tex
+pdflatex -shell-escape MCP_PMTs_ANL.tex
+pdflatex -shell-escape MCP_PMTs_ANL.tex
+
+rm -f *.tex~ MCP_PMTs_ANL.mtc1 MCP_PMTs_ANL.aux MCP_PMTs_ANL.dvi MCP_PMTs_ANL.lof MCP_PMTs_ANL.log MCP_PMTs_ANL.out MCP_PMTs_ANL.lot MCP_PMTs_ANL.toc MCP_PMTs_ANL.brf MCP_PMTs_ANL.maf MCP_PMTs_ANL.mtc MCP_PMTs_ANL.mtc0 MCP_PMTs_ANL.nlo MCP_PMTs_ANL.end MCP_PMTs_ANL.spl MCP_PMTs_ANLNotes.bib
+
