@@ -10,7 +10,7 @@
 
 \linenumbers
 
-\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Rate capability 
+\title{\vspace{-15mm}\fontsize{18pt}{10pt}\selectfont\textbf{Rate capability 
 and magnetic field tolerance measurements of fast timing microchannel plate 
 photodetectors}}
 \input author_list.tex  
@@ -27,11 +27,11 @@ microchannel plate photodetectors fabricated at Argonne National Laboratory.
 The microchannel plate photodetector is designed of low-cost all-glass vacuum 
 package with a chevron pair stack of ``next generation" microchannel plates 
 functionalized by atomic layer deposition. The rate capability test was 
-performed with Fermilab 120 GeV primary proton beam, and the magnetic field 
-tolerance test was performed on a solenoid magnetic facility with tunable 
-magnetic field strength up to 4 Tesla. The gain of measured microchannel plate 
+performed using Fermilab 120 GeV primary proton beam, and the magnetic field 
+tolerance test was performed using a solenoid magnetic with tunable magnetic 
+field strength up to 4 Tesla. The measured gain of the microchannel plate 
 photodetector is stable up to 75 kHz/cm$^{2}$, and varies depending on the 
-applied magnetic field strength and rotation angle relative to the magnetic 
+applied magnetic field strength and the rotation angle relative to the magnetic 
 field direction.
 \end{abstract}
 
@@ -99,8 +99,10 @@ addressed at the end of this paper.
 Current design of the 6$\times$6 cm$^2$ MCP photodetector is developed from the 
 original LAPPD internal resistor chain design \cite{Wang-MCPs2}, similar to the 
 current standard design of commercial LAPPD$^{TM}$ detectors 
-\cite{Craven-MCPs}.  Fig.  1 shows a schematic design (not to scale) of current 
-MCP-based photodetector assembly and the electrical circuit diagram.  
+\cite{Craven-MCPs}. Figure \ref{fig:design} shows a schematic design (not to 
+scale) of current MCP-based photodetector assembly and the electrical circuit 
+diagram.  
+
 \begin{figure}[tbp]
 \centering 
 \includegraphics[scale=0.21]{fig/MCPs_design.png}
@@ -108,7 +110,8 @@ MCP-based photodetector assembly and the electrical circuit diagram.
    electrical circuit diagram. External connections to the top and bottom 
 surfaces of the two MCPs are through ultra-thin metal shims (not shown) to 
 special extra strip lines on the tile base. The circuit diagram shows 
-connections through side wall in a simplified format.} \label{fig:design}
+connections through side wall in a simplified format.} 
+\label{fig:design}
 \end{figure}
 
 The MCP photodetector is an all glass body assembly, consists of glass base 
@@ -127,17 +130,19 @@ window, and an indium seal is made between the top window and the sidewall
 through a low temperature thermo-compression sealing process to form a hermetic 
 vacuum detector package. The completed MCP-based photodetector is attached to a 
 custom-made circuit board, providing a permanent mount and firm electrical 
-connections as shown in Fig. 2. External electrical connections for both signal 
-and high voltage are inserted into the external resistor connections to serve 
-as high voltage divider, ensuring both MCPs work at an independently optimized 
-high voltage for best performance. Additional capacitors may also be added 
-across the resistor divider for better signal waveform.  
+connections as shown in Figure \ref{fig:MCP_assm}. External electrical 
+connections for both signal and high voltage are inserted into the external 
+resistor connections to serve as high voltage divider, ensuring both MCPs work 
+at an independently optimized high voltage for best performance.  Additional 
+capacitors may also be added across the resistor divider for better signal 
+waveform.  
 
 \begin{figure}[tbp]
 \centering 
 \includegraphics[scale=0.23]{fig/MCPs_assembly.png}
 \caption{Completed MCP-based photodetector attached to a circuit board, 
-providing firm electrical connections.} \label{fig:MCP_assm}
+providing firm electrical connections.} 
+\label{fig:MCP_assm}
 \end{figure}
 
 The microchannel plates used in the 6$\times$6 cm$^2$ MCP photodetector are 
@@ -186,12 +191,13 @@ During our experiment, the 120 GeV/c proton beam intensity was tuned to vary
 from 500 to 40,000 particles per spill. The beam rate was calculated using the 
 number of triggers per spill and was corrected for the size of the beam spot by 
 reconstructing the beam profile. The calculated beam rate varies from 3 to 150 
-kHz/cm$^2$ corresponding to the monitored beam particle intensity. Fig. 3 shows 
-the gain of the MCP-based photodetector measured as a function of the beam 
-rate. The measured gain of the investigated detector is stable up to a beam 
-flux of 75 kHz/cm$^2$ and still over 10$^7$ when the beam flux reaches 150 
-kHz/cm$^2$. Such a high rate capability of the MCP-based photodetector will be 
-sufficient for EIC PID detectors at the proposed energies of the beams.
+kHz/cm$^2$ corresponding to the monitored beam particle intensity. Figure 
+\ref{fig:MCP_gain_proton_beam} shows the gain of the MCP-based photodetector 
+measured as a function of the beam rate. The measured gain of the investigated 
+detector is stable up to a beam flux of 75 kHz/cm$^2$ and still over 10$^7$ 
+when the beam flux reaches 150 kHz/cm$^2$. Such a high rate capability of the 
+MCP-based photodetector will be sufficient for EIC PID detectors at the 
+proposed energies of the beams.
 %, which are expected to work at a rate environment of  xxx Hz/cm$^2$.
 
 \begin{figure}[tbp]
@@ -224,11 +230,12 @@ normal to the direction of magnetic field. The position of the dark box was
 adjusted so that the center of the MCP photodetector is well aligned with the 
 center of the solenoid magnet. A rotation mechanism was also integrated with 
 the system, allowing rotation of the MCP-based photodetector with angle 
-$\theta$ as shown in Fig. 4 (not to scale). A 405 nm light-emitting diode (LED) 
-was used as the light source and introduced to the surface of the MCP 
-photodetector through an optical fiber. High voltage was applied to the MCPs 
-from a supply with variable voltage control, and signals from the strip lines 
-were readout through CAEN DT5742 desktop digitizer.
+$\theta$ as shown in Figure \ref{fig:MCPs_theta_rotation} (not to scale). A 405 
+nm light-emitting diode (LED) was used as the light source and introduced to 
+the surface of the MCP photodetector through an optical fiber.  High voltage 
+was applied to the MCPs from a supply with variable voltage control, and 
+signals from the strip lines were readout through CAEN DT5742 desktop 
+digitizer.
 
 \begin{figure}[tbp]
 \centering 
@@ -250,15 +257,16 @@ The dependence of the MCP photodetector performance on the magnetic field
 strength was done at rotation angle $\theta$ = 0$^{\circ}$, i.e., the direction 
 of the magnetic field is normal to the surface of the MCP-based photodetector.  
 We measured the gain of the investigated MCP photodetector in various magnetic 
-field environment with different bias voltages, the results are plotted in Fig.  
-5. The gain is calculated based on integrated charge in pulse normalized to 
-single photoelectron. At a fixed bias high voltage, the gain of MCP 
-photodetector increases slightly as the magnetic field strength increases to 
-0.2 T, and starts to decrease as the magnetic field strength continues to 
-increase, and eventually breaks down at magnetic field strength of $\sim$~0.8 
-T.  In the same magnetic field environment, the gain of the MCP photodetector 
-increases as the biased high voltage increases. This behavior is similar to our 
-previous measurement of the MCP photodetectors without applying magnetic field. 
+field environment with different bias voltages, the results are plotted in 
+Figure \ref{fig:MCPs_gain_B_HV}. The gain is calculated based on integrated 
+charge in pulse normalized to single photoelectron. At a fixed bias high 
+voltage, the gain of MCP photodetector increases slightly as the magnetic field 
+strength increases to 0.2 T, and starts to decrease as the magnetic field 
+strength continues to increase, and eventually breaks down at magnetic field 
+strength of $\sim$~0.8 T.  In the same magnetic field environment, the gain of 
+the MCP photodetector increases as the biased high voltage increases.  This 
+behavior is similar to our previous measurement of the MCP photodetectors 
+without applying magnetic field. 
 
 
 \subsection{Magnetic field angle dependence}\label{subsec_theta}
@@ -275,13 +283,14 @@ same due to the different effect from top and bottom MCPs.}
 \end{figure}
 The performance of MCP-based photodetector at different angle was also studied 
 by rotating the MCP photodetector along with angle $\theta$ relative to the 
-magnetic field direction, as shown in Fig 5. We fixed the biased high voltage 
-at 3000 V on the photodetector and rotated the photodetector from -90$^{\circ}$ 
-to 90$^{\circ}$ for a full angle measurement. Fig. 6 shows the gain of MCP 
-photodetector measured as a function of the rotation angle $\theta$ at magnetic 
-field strength of 0.5 and 0.25 Tesla respectively. The MCP photodetector almost 
-does not provide detectable signals when $\theta$~$\leq$~-30$^{\circ}$ or 
-$\theta$~$\geq$~30$^{\circ}$. Within - 
+magnetic field direction, as shown in Figure \ref{fig:MCPs_gain_B_HV}. We fixed 
+the biased high voltage at 3000 V on the photodetector and rotated the 
+photodetector from -90$^{\circ}$ to 90$^{\circ}$ for a full angle measurement.  
+Figure \ref{fig:MCPs_gain_theta_B} shows the gain of MCP photodetector measured 
+as a function of the rotation angle $\theta$ at magnetic field strength of 0.5 
+and 0.25 Tesla respectively. The MCP photodetector almost does not provide 
+detectable signals when $\theta$~$\leq$~-30$^{\circ}$ or 
+$\theta$~$\geq$~30$^{\circ}$.  Within - 
 30$^{\circ}$~$\leq$~$\theta$~$\leq$~30$^{\circ}$, there are two gain peaks at 
 $\theta$ = $\pm$8$^{\circ}$, which are due to the ``chevron" configuration of 
 two MCPs inside the photodetector. The gain reaches a maximum when the pore of 
