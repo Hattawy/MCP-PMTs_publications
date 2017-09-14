@@ -1,0 +1,12 @@
+.nfs000*
+*.log
+*.aux
+*.spl
+*.bbl
+*.blg
+*.end
+*.dpth
+*.toc
+*.auxlock
+*.out
+*.brf
