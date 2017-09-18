@@ -98,8 +98,7 @@ radiation damage, and high magnetic field environments are required to further
 validate the application of LAPPD$^{TM}$ detectors as the EIC PID photosensors. 
 
 In this paper, we describe the current design of 6$\times$6~cm$^2$ MCP 
-photodetectors fabricated at ANL, explain the working principle of these 
-photodetectors, and report recent results on their performance tests in a high 
+photodetectors fabricated at ANL, report recent results on their performance tests in a high 
 rate environment and a high magnetic field environment. The direction of 
 further optimization of the LAPPD$^{TM}$ design for an EIC PID application is 
 also addressed at the end of this paper.
@@ -119,8 +118,8 @@ The current ANL design of the 6$\times$6~cm$^2$ MCP photodetector is developed
 from the original LAPPD internal resistor chain design \cite{Wang-MCPs2}, 
 similar to the current commercial standard design of LAPPD$^{TM}$ detectors 
 \cite{Craven-MCPs}. Figure \ref{fig:design} shows a schematic design of the 
-current ANL MCP photodetector assembly and its electrical circuit diagram.  
-
+current ANL MCP photodetector assembly and its electrical circuit diagram.
+ 
 The MCP photodetector is an all glass body assembly, consisting of a glass base 
 window, a top window, two side walls, three grid spacers and two MCPs. The side 
 walls are frit-bonded onto the base window, with silver stripline anodes 
@@ -128,7 +127,18 @@ printed to lead the signals and high voltage connections to the outside. Three
 grid spacer sets are used, one between the anode and the lower MCP, one between 
 the two MCPs, and one between the upper MCP and the top window. These spacers 
 function as insulators to separate the different components, and also to hold 
-these internal components in place in the vacuum assembly. 
+these internal components in place in the vacuum assembly. When the MCP 
+photodetector is exposed to the light, photocathode coverts the incoming 
+photons into photoelectrons. These photoelectrons are then accelerated towards 
+the MCP and hit the inner wall of a channel to emit secondary electrons. Since 
+the bias voltage applied across both ends of the MCP creates an electric field 
+inside the micro channels, these secondary electrons are further accelerated 
+and bombard the channel wall again, producing additional secondary electrons.  
+This process is repeated several times as the electrons travel along the 
+channels, and a lot of electrons are released at the output end of the MCP. Two 
+MCPs are used here to ensure the electrons are multiplied several times, and 
+the final electrons deposited onto the stripline anode are strong enough for 
+signal detection.  
 
 Four ultra-thin metal shims are applied at the top and bottom surfaces of the 
 two MCPs to lead the electrical connection to external connections. The 
@@ -181,8 +191,15 @@ the gain of the MCP photodetector, and limiting the detector performance.
  
 We investigated the rate capability of the 6$\times$6~cm$^2$ MCP photodetectors 
 with the 120~GeV/c primary proton beam at Fermilab Test Beam Facility (FTBF).  
-The beam is delivered as a slow spill with a 4~s duration once per minute with 
-a maximum intensity of $~$10$^5$ particles per spill. The beam shape is 
+As the protons travel through the 3 mm thick glass top window of the MCP 
+photodetector, \u Cerenkov light is produced and detected by the MCP 
+photodetector as our experiment signals.The beam is delivered as a slow spill 
+with a 4~s duration once per minute with a maximum intensity of $~$10$^5$ 
+particles per spill. The beam shape is an ellipse with a major-diameter of 4.6 
+mm and a minor-diameter of 1.8 mm. The beam intensity exhibited a gaussian 
+profile, and it was close to a constant during each spill period. 
+
+The beam shape is 
 circular with a diameter of 6~mm and a Gaussian density profile.  The beam 
 intensity was close to a constant during each spill period. The incident proton 
 beam was monitored by an upstream multiwire proportional counter to see the 
