@@ -124,25 +124,19 @@ The MCP photodetector is an all glass body assembly, consisting of a glass base
 window, a top window, two side walls, three grid spacers and two MCPs. The side 
 walls are frit-bonded onto the base window, with silver stripline anodes 
 printed to lead the signals and high voltage connections to the outside. Three 
-grid spacer sets are used, one between the anode and the lower MCP, one between 
-the two MCPs, and one between the upper MCP and the top window. These spacers 
-function as insulators to separate the different components, and also to hold 
-these internal components in place in the vacuum assembly. When the MCP 
-photodetector is exposed to the light, photocathode coverts the incoming 
-photons into photoelectrons. These photoelectrons are then accelerated towards 
-the MCP and hit the inner wall of a channel to emit secondary electrons. Since 
-the bias voltage applied across both ends of the MCP creates an electric field 
-inside the micro channels, these secondary electrons are further accelerated 
-and bombard the channel wall again, producing additional secondary electrons.  
-This process is repeated several times as the electrons travel along the 
-channels, and a lot of electrons are released at the output end of the MCP. Two 
-MCPs are used here to ensure the electrons are multiplied several times, and 
-the final electrons deposited onto the stripline anode are strong enough for 
-signal detection.  
+grid spacer sets are used, one between the top window and the upper MCP, one between the two MCPs, and one between the lower MCP and the anode. These spacers function as insulators to separate the different components, and also to hold these internal components in place in the vacuum assembly. 
 
-Four ultra-thin metal shims are applied at the top and bottom surfaces of the 
-two MCPs to lead the electrical connection to external connections. The 
-detailed description of the circuit connection inside the vacuum package can be 
+The photocathode coverts the incoming photons into photoelectrons. These 
+photoelectrons are then accelerated towards the MCP and hit the inner wall 
+of a channel emitting secondary electrons. Then, the secondary electrons are 
+further accelerated by the electric field generated across the ends of the 
+MCP bombarding the channel wall again and producing additional secondary electrons.  
+This process is repeated as the electrons travel along the 
+channels of the MCPs. Two MCPs are used in our design to ensure that the electrons are multiplied 
+several times, and the signals deposited onto the stripline anode 
+are strong enough for signal detection. 
+
+Four ultra-thin metal shims are applied at the top and bottom surfaces of the two MCPs to lead the electrical connection to external connections. The detailed description of the circuit connection inside the vacuum package can be 
 found in reference \cite{Xia-MCPs}. This independent bias-voltage design 
 provides the advantage of individually controlling and fine tuning the bias 
 voltage for each MCP. A Bialkali photocathode is deposited on the inner surface 
@@ -190,15 +184,9 @@ We investigated the rate capability of the 6$\times$6~cm$^2$ MCP photodetectors
 with the 120~GeV/c primary proton beam at Fermilab Test Beam Facility (FTBF).  
 As the protons travel through the 3 mm thick glass top window of the MCP 
 photodetector, \u Cerenkov light is produced and detected by the MCP 
-photodetector as our experiment signals.The beam is delivered as a slow spill 
+photodetector as our signals. The beam is delivered as a slow spill 
 with a 4~s duration once per minute with a maximum intensity of $~$10$^5$ 
-particles per spill. The beam shape is an ellipse with a major-diameter of 4.6 
-mm and a minor-diameter of 1.8 mm. The beam intensity exhibited a gaussian 
-profile, and it was close to a constant during each spill period. 
-
-The beam shape is 
-circular with a diameter of 6~mm and a Gaussian density profile.  The beam 
-intensity was close to a constant during each spill period. The incident proton 
+particles per spill. The beam has an elliptical shape, a major-diameter of 4.6~mm and a minor-diameter of 1.8~mm, and a Gaussian density profile. The incident proton 
 beam was monitored by an upstream multiwire proportional counter to see the 
 beam profile. Three plastic scintillators were used in coincidence as a trigger 
 and to count the number of incident protons. A light-tight dark box was 
@@ -334,7 +322,7 @@ available MCP-PMTs ($\sim$~1.0~T) with similar pore size \cite{MCPs-B}. Here,
 we must emphasize that the current LAPPD design is not yet optimized for 
 magnetic field tolerant applications. The distances between the photocathode, 
 MCPs, and the anode are relatively large in the LAPPD design. For instance, the 
-spacings between the photocathode and the top MCP of 2~mm and spacings between 
+spacing between the photocathode and the top MCP of 2~mm and spacing between 
 the bottom MCP and the anode of 3.2~mm \cite{Wang-MCPs}. To optimize for a 
 magnetic field environment, these distances should be reduced to minimize the 
 electron transit distance. Meanwhile, MCP photodetectors with smaller pore 
