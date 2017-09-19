@@ -108,9 +108,8 @@ also addressed at the end of this paper.
 \caption{Schematic of MCP photodetector assembly (not to scale) and the 
    electrical circuit diagram. External connections to the top and bottom 
 surfaces of the two MCPs are through ultra-thin metal shims (not shown) to 
-special extra strip lines on the tile base. The circuit diagram shows 
-connections through side wall in a simplified format.} 
-\label{fig:design}
+special extra striplines on the tile base. The circuit diagram shows 
+connections through side wall in a simplified format.} \label{fig:design}
 \end{figure*}
 
 \section{Design of the MCP photodetector assembly} \label{sec_design}
@@ -124,19 +123,24 @@ The MCP photodetector is an all glass body assembly, consisting of a glass base
 window, a top window, two side walls, three grid spacers and two MCPs. The side 
 walls are frit-bonded onto the base window, with silver stripline anodes 
 printed to lead the signals and high voltage connections to the outside. Three 
-grid spacer sets are used, one between the top window and the upper MCP, one between the two MCPs, and one between the lower MCP and the anode. These spacers function as insulators to separate the different components, and also to hold these internal components in place in the vacuum assembly. 
+grid spacer sets are used; one between the top window and the upper MCP, one 
+between the two MCPs, and one between the lower MCP and the anode. These 
+spacers function as insulators to separate the different components, and also 
+to hold these internal components in place in the vacuum assembly. 
 
-The photocathode coverts the incoming photons into photoelectrons. These 
-photoelectrons are then accelerated towards the MCP and hit the inner wall 
-of a channel emitting secondary electrons. Then, the secondary electrons are 
-further accelerated by the electric field generated across the ends of the 
-MCP bombarding the channel wall again and producing additional secondary electrons.  
-This process is repeated as the electrons travel along the 
-channels of the MCPs. Two MCPs are used in our design to ensure that the electrons are multiplied 
-several times, and the signals deposited onto the stripline anode 
-are strong enough for signal detection. 
+When light hits the photocathode, photoelectrons are emitted and are then 
+accelerated towards the MCP hitting the inner wall of a channel and emitting 
+secondary electrons. Then, the secondary electrons are further accelerated by 
+the electric field generated across the ends of the MCP bombarding the channel 
+wall again and producing additional secondary electrons.  This process is 
+repeated as the electrons travel along the channels of the MCPs. Two MCPs are 
+used in our design to ensure that the electrons are multiplied several times, 
+and the signals deposited onto the stripline anode are strong enough for signal 
+detection. 
 
-Four ultra-thin metal shims are applied at the top and bottom surfaces of the two MCPs to lead the electrical connection to external connections. The detailed description of the circuit connection inside the vacuum package can be 
+Four ultra-thin metal shims are applied at the top and bottom surfaces of the 
+two MCPs to lead the electrical connection to external connections. The 
+detailed description of the circuit connection inside the vacuum package can be 
 found in reference \cite{Xia-MCPs}. This independent bias-voltage design 
 provides the advantage of individually controlling and fine tuning the bias 
 voltage for each MCP. A Bialkali photocathode is deposited on the inner surface 
@@ -184,16 +188,17 @@ We investigated the rate capability of the 6$\times$6~cm$^2$ MCP photodetectors
 with the 120~GeV/c primary proton beam at Fermilab Test Beam Facility (FTBF).  
 As the protons travel through the 3 mm thick glass top window of the MCP 
 photodetector, \u Cerenkov light is produced and detected by the MCP 
-photodetector as our signals. The beam is delivered as a slow spill 
-with a 4~s duration once per minute with a maximum intensity of $~$10$^5$ 
-particles per spill. The beam has an elliptical shape, a major-diameter of 4.6~mm and a minor-diameter of 1.8~mm, and a Gaussian density profile. The incident proton 
+photodetector as our signals. The beam is delivered as a slow spill with a 4~s 
+duration once per minute with a maximum intensity of $~$10$^5$ particles per 
+spill. The beam has an elliptical shape, a major-diameter of 4.6~mm and a 
+minor-diameter of 1.8~mm, and a Gaussian density profile. The incident proton 
 beam was monitored by an upstream multiwire proportional counter to see the 
 beam profile. Three plastic scintillators were used in coincidence as a trigger 
 and to count the number of incident protons. A light-tight dark box was 
 designed to hold the MCP photodetector in the beam path with the detector 
 surface facing the beam direction. High voltage was applied to the MCPs through 
-an external resistor voltage divider, and signals from the strip lines were 
-read out through a DT5742 desktop digitizer \cite{Digitizer} produced by CAEN 
+an external resistor voltage divider, and signals from the striplines were read 
+out through a DT5742 desktop digitizer \cite{Digitizer} produced by CAEN 
 (Costruzioni Apparecchiature Elettroniche Nucleari S.p.A.) with a sampling rate 
 of 5~GS/s. The digitizer is based on a switched capacitor array of DRS4 (Domino 
 Ring Sampler) chips \cite{DRS}, 16 analog input channels, and one additional 
@@ -246,47 +251,46 @@ $\theta$, as shown in Figure \ref{fig:MCPs_theta_rotation}. A 405 nm
 light-emitting diode (LED) was used as the light source and was introduced to 
 the surface of the MCP photodetector through an optical fiber. High voltage was 
 applied to the MCPs from a supply with variable voltage control, and signals 
-from the strip lines were read out through the CAEN DT5742 desktop digitizer.
+from the striplines were read out through the CAEN DT5742 desktop digitizer.
 
 \begin{figure}[tbp]
 \centering 
 \includegraphics[scale=0.27]{fig/MCPs_theta_rotation.png}
-\caption{Schematic of the rotation mechanism of the MCP photodetector 
+\caption{Schematic of the rotation mechanism of the MCP photodetector with 
 with angle $\theta$ relative to the magnetic field direction during the 
 measurement.} \label{fig:MCPs_theta_rotation}
 \end{figure}
 
 \subsection{Magnetic field strength dependence}\label{subsec_HV}
 \begin{figure}[tbp]
-\hspace{-1.0 cm} 
-\includegraphics[scale=0.1]{fig/MCPs_gain_B_HV.png}
-\caption{Dependence of the MCP photodetector gain on the magnetic field 
-strength at different high voltages.} \label{fig:MCPs_gain_B_HV}
+\hspace{-1.0 cm} \includegraphics[scale=0.4]{fig/Graph8.png}
+\caption{Dependence of the MCP photodetector response, in terms of the mean 
+pulse height, on the magnetic field strength at different high voltages.} 
+\label{fig:MCPs_gain_B_HV}
 \end{figure}
 
 The dependence of the MCP photodetector performance on the magnetic field 
 strength was done at a rotation angle $\theta$ = 0$^{\circ}$, i.e., where the 
 direction of the magnetic field is normal to the surface of the MCP 
-photodetector. We measured the gain of the investigated MCP photodetector in 
-various magnetic field strengths with different bias voltages. The results are 
-presented in Figure \ref{fig:MCPs_gain_B_HV}. The gain is calculated based on 
-integrated charge in a pulse normalized to a single photoelectron. At a fixed 
-bias high voltage, the gain of the MCP photodetector increases slightly as the 
-magnetic field strength increases to 0.2~T, decreases as the magnetic field 
-strength continues to increase, and eventually breaks down at a fixed magnetic 
-field strength of $\sim$~0.8~T. In the same magnetic field environment, the 
-gain of the MCP photodetector increases as the high voltage increases. This 
-behavior is similar to our previous measurements of the MCP photodetectors 
-without applying a magnetic field \cite{Wang-MCPs}. 
+photodetector. We measured the performance of the investigated MCP 
+photodetector in various magnetic field strengths at different bias high 
+voltages. The results are presented in Figure \ref{fig:MCPs_gain_B_HV}. At a 
+fixed bias high voltage, the mean pulse height of the MCP photodetector 
+increases slightly as the magnetic field strength increases to 0.2~T, decreases 
+as the magnetic field strength continues to increase, and eventually breaks 
+down at a fixed magnetic field strength of $\sim$~0.8~T. In the same magnetic 
+field environment, the mean pulse height of the MCP photodetector increases as 
+the high voltage increases. This behavior is similar to our previous 
+measurements of the MCP photodetectors without applying a magnetic field 
+\cite{Wang-MCPs}. 
 
 
 \subsection{Magnetic field angle dependence}\label{subsec_theta}
 
 \begin{figure}[tbp]
-\centering 
-\includegraphics[scale=0.35]{fig/MCPs_gain_theta_B.png}
-\caption{Gain of the MCP photodetector as a function of the rotation angle 
-   $theta$ relative to the direction of magnetic field. The two peaks around 
+\centering \includegraphics[scale=0.35]{fig/Graph9.png}
+\caption{Response of the MCP photodetector as a function of the rotation angle 
+   $\theta$ relative to the direction of magnetic field. The two peaks around 
 -8$^{\circ}$ and 8$^{\circ}$ indicates the effect due to the 8$^{\circ}$ bias 
 angle of the MCPs. Note that the intensities of these two peaks are not the 
 same due to the different effect from top and bottom MCPs.} 
@@ -295,21 +299,19 @@ same due to the different effect from top and bottom MCPs.}
 The angular dependence of the MCP photodetector was additionally studied by 
 rotating the MCP photodetector along with angle $\theta$ relative to the 
 magnetic field direction, as shown in Figure \ref{fig:MCPs_gain_B_HV}. We fixed 
-the biased high voltage at 3000 V on the photodetector and rotated the 
+the bias high voltage at 3000 V on the photodetector and rotated the 
 photodetector from -90$^{\circ}$ to 90$^{\circ}$ for a full range of angle 
-measurements. Figure \ref{fig:MCPs_gain_theta_B} presents the gain of the MCP 
-photodetector measured as a function of the rotation angle $\theta$ at two 
-magnetic field strengths of 0.25 and 0.5~Tesla.  For 
-$\theta$~$\leq$~-30$^{\circ}$ or $\theta$~$\geq$~30$^{\circ}$, any signal is 
-hardly seperated from the noise level. Within 
--30$^{\circ}$~$\leq$~$\theta$~$\leq$~30$^{\circ}$, there are two gain peaks at 
+measurements. Figure \ref{fig:MCPs_gain_theta_B} presents the response of the 
+MCP photodetector, in terms of the mean pulse height, measured as a function of 
+the rotation angle $\theta$ at two magnetic field strengths of 0.25 and 
+0.5~Tesla. For $\theta$~$\leq$~-30$^{\circ}$ or $\theta$~$\geq$~30$^{\circ}$, 
+any signal is hardly seperated from the noise level. Within 
+-30$^{\circ}$~$\leq$~$\theta$~$\leq$~30$^{\circ}$, there are two peaks at 
 $\theta$ = $\pm$8$^{\circ}$, which are due to the chevron configuration of two 
-MCPs inside the photodetector. The gain reaches a maximum when the pore of 
-either MCP is well-aligned with the magnetic field direction.  The intensities 
-of the two peaks are different, which is due to the different effect from the 
-top and bottom MCPs.
-
-
+MCPs inside the photodetector. The detector's response reaches a maximum when 
+the pore of either MCP is well-aligned with the magnetic field direction.  The 
+intensities of the two peaks are different, which is due to the different 
+effect from the top and bottom MCPs.
 
 \subsection{Design optimization of MCP photodetector}\label{subsec_opt}
 In the design of the EIC experiment, a 1.5~Tesla solenoid magnet will be used 
@@ -409,8 +411,7 @@ L. Xia et al., Systems and methods for forming microchannel plate (MCP)
 photodetector assemblies, U.S. Patent 9704900 B1, July 11, 2017.
 
 \bibitem{Digitizer}
-DT5742 desktop digitizer 
-\url{http://www.caen.it/jsp/Template2/CaenProd.jsp?parent=14&idmod=651}
+DT5742 desktop digitizer \url{http://www.caen.it}
 
 \bibitem{DRS}
    DRS chip developed at Paul Scherrer Institut, Switzerland \url{
